@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fibonacci Mocha Tests</title>
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+
+    <script>
+    mocha.setup("bdd")
+	// It is a bit tricky getting this to work both from command line npm-run mocha as well as browser harnessed.
+    var module = {};
+    var require;
+    // Additional bits such as Mocha, Chai, Assert, Expect, etc, are identified local to the parent Describe blocks.
+    </script>
+
+    <!-- load code you want to test here -->
+	<script src="scripts/fibonacci.js"></script>
+
+	<!-- load your test files here -->
+    <script src="test/scripts/fibonacci-basic-tests.js"></script>
+    <script src="test/scripts/fibonacci-problem-solution-tests.js"></script>
+
+    <script>
+    mocha.checkLeaks();
+    mocha.run();
+    </script>
+  </body>
+</html>

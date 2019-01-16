@@ -1,0 +1,30 @@
+{
+  "name": "fibonacci-js",
+  "version": "1.0.0",
+  "description": "Fibonacci sequence generator",
+  "main": "scripts/fibonacci.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "4.2.0",
+    "express": "4.16.4",
+    "gulp": "3.9.1",
+    "gulp-cli": "2.0.1",
+    "mocha": "5.2.0"
+  },
+  "scripts": {
+    "test": "mocha \"test/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mwpowellhtx/FibonacciJS.git"
+  },
+  "author": {
+    "name": "Michael W. Powell",
+    "email": "mwpowellhtx@gmail.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mwpowellhtx/FibonacciJS/issues"
+  },
+  "homepage": "https://github.com/mwpowellhtx/FibonacciJS"
+}

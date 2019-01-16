@@ -9,7 +9,16 @@ I did refactor the source code a little bit into a ``scripts/fibonacci.js`` loca
 Assuming you are subscribing via NPM sources:
 
 ```JavaScript
-var fib = require("fibonacci").calculator;
+// Usage with default Calculator.
+var fib = require("fibonacci").calculator();
+const i = 42;
+const x = fib.get(i);
+console.log("the 43-rd value was: " + x);
+```
+
+```JavaScript
+// Usage with default user provided filter, although basically still unfiltered.
+var fib = require("fibonacci").calculator(function(i, x) { return x; });
 const i = 42;
 const x = fib.get(i);
 console.log("the 43-rd value was: " + x);
